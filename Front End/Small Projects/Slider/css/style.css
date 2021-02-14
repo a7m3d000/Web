@@ -2,10 +2,12 @@
 body {
     background-color: #333;
 }
-
-
 /* End Main */
 
+/*  ==================================================  */
+
+
+/* Start Container Slider */
 .slider {
 
     margin: 250px auto;
@@ -13,7 +15,11 @@ body {
     height: 500;
 
 }
+/* End Container Slider */
 
+/*  ==================================================  */
+
+/* Start Slider */
 .slide {
     margin: auto;
     width: 800px;
@@ -22,7 +28,11 @@ body {
     float: left;
     position: relative;
 }
+/* End slider */
 
+/*  ==================================================  */
+
+/* Start Slider's Images */
 .slide img {
 
     width: 100%;
@@ -30,7 +40,11 @@ body {
     display: none;
     border-radius: 30px;
 }
+/* Start Slider's Images */
 
+/*  ==================================================  */
+
+/* Start Next/Previous Buttons */
 .prev, .next {
 
     width: 40px;
@@ -41,3 +55,6 @@ body {
 .slide .show {
     display: inline-block;
 }
+/* Start Next/Previous Buttons */
+
+
