@@ -1,5 +1,6 @@
 $(function(){
-
+    
+    /*============================================== Next Button =======================================*/ 
     $(".next").click(function(){
         const  currentImg = $(".show");
         const nextImg = currentImg.next();
@@ -9,8 +10,8 @@ $(function(){
         nextImg.fadeIn("slow").addClass("show");
         }
     });
-
-    
+ 
+    /*============================================== Previus Button =======================================*/ 
     $(".prev").click(function(){
         const  currentImg = $(".show");
         const prevImg = currentImg.prev();
