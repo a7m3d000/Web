@@ -1,0 +1,43 @@
+/* Start Main */
+body {
+    background-color: #333;
+}
+
+
+/* End Main */
+
+.slider {
+
+    margin: 250px auto;
+    width: 880px;
+    height: 500;
+
+}
+
+.slide {
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.slide img {
+
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 30px;
+}
+
+.prev, .next {
+
+    width: 40px;
+    float: left;
+    margin-top: 250px;
+}
+
+.slide .show {
+    display: inline-block;
+}
