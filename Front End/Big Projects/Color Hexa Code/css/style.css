@@ -1,0 +1,87 @@
+/* Start Main */
+ /* body {
+    margin: 0px;
+    padding: 0px;  */
+    
+/* End Main */
+
+
+/*======================== Container =======================*/
+.container {
+
+    margin: 100px auto;
+    width: 1500px;
+    height: 755px;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    box-shadow: 0px 0px 25px -7px black ;
+    border-radius: 15px;
+    border-top: 50px solid royalblue;
+    /* border-bottom: 7px solid crimson;
+    border-left: 7px solid crimson;
+    border-right: 7px solid crimson; */
+    
+
+}
+
+
+/*======================== Color Screen =======================*/
+.color-screen {
+
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px -7px black ;
+    border: 10px solid white;
+    margin: 27px  auto;
+}
+
+
+/*======================== Input/Output Screen =======================*/
+.input-output {
+
+    margin: 60px;
+    /* margin: auto; */
+
+
+}
+
+/*======================== Output Screen =======================*/
+
+.input {
+
+    display: inline;
+    padding-left:0px;
+    color: #333;
+    font-family: Cursive;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+/*======================== Input Screen =======================*/
+.output {
+
+    display: inline;
+    padding-left:670px;
+
+}
+.output .lable2 {
+
+    
+    color: #333;
+    font-family: Cursive;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+.output0 {
+
+    color: crimson;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    height: 30px;
+
+}
