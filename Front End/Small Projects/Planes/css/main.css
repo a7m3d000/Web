@@ -1,0 +1,219 @@
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Pangolin&display=swap');
+
+    font-family: cairo;
+    background-color: #DCF5FF;
+
+}
+
+/* ======================= Main Container ======================= */
+.container {
+    width: 85%;
+    height: 75%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+/* ======================= Second Container ======================= */
+.cont {
+    width: 100%;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+/* ---------------------- Heading  ---------------------- */
+.cont h1 {
+    font-family: cairo;
+    font-size: 50px;
+    margin-bottom: 55px;
+    color: rgb(95, 92, 92);
+
+}
+
+.cont h1::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background-color: #ff0559;
+    /* background-image: linear-gradient(90deg, #12D2C6 50%,  
+                                             #12D2C6 50%, 
+                                             #00b7ff 50%); */
+    border-radius: 13px;
+    right: 46%;
+    top: 85px;
+
+}
+
+/* ---------------------- Paragraph ---------------------- */
+.cont p {
+    font-family: cairo;
+    font-size: 20px;
+    color: rgb(77, 74, 74);
+
+
+
+}
+
+/* ======================= Plans ======================= */
+.plans {
+    display: flex;
+    justify-content: center;
+
+    width: 90%;
+    height: 640px;
+    margin-bottom: 31px;
+    margin-top:85px;
+
+}
+
+/* ---------------------- Plan ---------------------- */
+.plan {
+    /* background-color: #f0fafd; */
+    background-color: white;
+    width: calc(70% / 3);
+    border-radius: 0px 0px 30px 30px;
+
+    margin: 0px 1.7% 0px 1.7%;
+    height: fit-content;
+
+    box-shadow: 0px 0px 15px  rgba(148, 148, 148, 0.5);
+
+    position: relative;
+    border-radius: 12px 12px 30px 30px ;
+    
+}
+
+.plan::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:13px;
+    /* background-color: #0297FE; */
+    right: 0px;
+    border-radius: 30px 30px 0px 0px;
+    background-image: linear-gradient(90deg, #12D2C6 10%, #00b7ff);
+
+}
+
+.p-2 {
+    transform: scale(1.1);
+    position: relative;
+    bottom: 70px;
+
+}
+
+/* ---------------------- Heading ---------------------- */
+.plan h3 {
+    color: rgb(95, 92, 92);
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 27px;
+    
+}
+
+.plan h3::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 7px;
+    background-color: #0297FE;
+    border-radius: 13px;
+    right: 45%;
+    top: 93%;
+
+}
+
+/* ---------------------- Span ---------------------- */
+.plan span {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(95, 92, 92);
+
+}
+
+#free {
+    font-size: 30px;
+
+}
+
+/* ---------------------- Lists ---------------------- */
+.plan ul {
+    list-style: none;
+    margin-left: 16%;
+    margin-top: 30px;
+    width: 43%;
+    font-size: 20px;
+    
+}
+
+.plan ul li {
+    margin: 25px 0px 0px 0px ;
+    position: relative;
+    font-size: 20px;
+
+}
+
+.plan ul li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #0297FE;
+    top: 110%;
+    right: 0;
+    left: 0;
+    border-radius: 7px;
+
+}
+
+/* ---------------------- Buttons ---------------------- */
+.btn-2, .btn-3 {
+    width: 70%;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #0297FE;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px  rgb(163, 161, 161);
+    transition-duration: 0.1s;
+
+}
+
+.btn-1 {
+    background-color: #31d194;
+    width: 70%;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px  rgb(163, 161, 161);
+    transition-duration: 0.1s;
+
+}
+
+.plan button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+
+}
