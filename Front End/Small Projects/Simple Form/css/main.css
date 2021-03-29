@@ -38,6 +38,11 @@ body {
 
 }
 
+span {
+  font-size: 19px;
+    color: red;
+}
+
 .box .first-three .username, 
 .box .first-three .pass,
 .box .first-three .e-mail{
