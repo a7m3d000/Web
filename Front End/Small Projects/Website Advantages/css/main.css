@@ -99,6 +99,22 @@ body {
 
 }
 
+/* ------- Borders ------- */
+.one {
+  border-bottom: 3.5px solid #03a9f4;
+  
+}
+
+.two {
+  border-bottom: 3.5px solid #009688;
+  
+}
+
+.three {
+  border-bottom: 3.5px solid #ff5722;
+  
+}
+
 /* ------- Buttons ------- */
 .box button {
     height: 38px;
