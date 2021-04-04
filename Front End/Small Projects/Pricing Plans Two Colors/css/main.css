@@ -1,0 +1,215 @@
+/* ================== Vraiables ================== */
+:root{
+    --pro-color: #1998ff;
+    --ultmate-color: #545454;
+}
+
+/* ================== Main Style ================== */
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* ================== Container ================== */
+.main-container {
+    margin: 170px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/* ================== Plans ================== */
+.plans {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 50px;
+
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 70px 0px 70px;
+    border: 1px solid #ccc;
+
+}
+
+.one {
+    background-color: var(--pro-color);
+
+}
+
+.two {
+    background-color: #fff;
+
+}
+
+/* ----- Big Cicle ----- */
+.plans .plan .big-circle {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -160px;
+    position: relative;
+    border: 13px solid #fff;
+  
+}
+
+.plans .plan .pro-circle {
+    background-color: var(--pro-color);  
+    
+}
+
+.plans .plan .pro-circle::before{
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    border: 14px solid var(--pro-color);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+
+  }
+
+.plans .plan .ultmate-circle {
+    background-color: var(--ultmate-color);
+    z-index: 3;
+    border: 15px solid #ccc;
+
+}
+
+.plans .plan .ultmate-circle::before{
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    border: 14px solid #fff;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.plans .plan .big-circle .price {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 3px;
+
+}
+
+.plans .plan .big-circle span {
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+
+}
+
+/* ----- Small Cicle ----- */
+.plans .plan .big-circle .small-circle {
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--pro-color);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--pro-color);
+  
+}
+
+/* ----- Heading ----- */
+.plans .plan h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold; 
+    margin-bottom: 57px;
+
+}
+
+.plans .plan .pro-heading {
+    color: #fff;
+
+}
+
+.plans .plan .ultmate-heading {
+    color: var(--ultmate-color);
+
+}
+
+/* ----- List's Style ----- */
+.plans .plan ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: calc(100% + 30px);
+
+}
+
+.plans .plan ul li {
+    padding: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    border-top: 1px solid rgb(231, 229, 229);
+    text-align: center;
+  
+}
+
+.plans .plan ul li:last-child{
+    border-top: 1px solid rgb(231, 229, 229);
+
+}
+
+.plans .plan .pro-advantages {
+    color: #fff;
+
+}
+
+.plans .plan .ultmate-advantages {
+    color: #979797;
+
+}
+
+/* ----- Button ----- */
+.plans .plan button {
+    width: 150px;
+    height: 50px;
+    margin: 30px 0 30px 0 ;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 17.3px;
+
+}
+
+.plans .plan button:hover {
+    cursor: pointer;
+
+}
+
+.plans .plan .pro-btn {
+    background-color: #fff;
+    color: var(--pro-color);
+
+}
+
+.plans .plan .ultmate-btn {
+    background-color: var(--pro-color);
+    color: #fff;
+
+}
