@@ -37,3 +37,4 @@ ctx.fillStyle = "#000";
 ctx.lineWidth = 0;
 ctx.arc(450, 230, 50, 0, fullCircle);
 ctx.fill();
+
