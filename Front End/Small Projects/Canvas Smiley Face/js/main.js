@@ -14,8 +14,11 @@ ctx.fillRect(0, 0, c.clientWidth, c.height)
 // Main Face
 ctx.beginPath();
 ctx.fillStyle = "#ff0";
+ctx.strokeStyle = "#000"
+ctx.lineWidth = 3;
 ctx.arc(350, 350, 330, 0, fullCircle);
 ctx.fill();
+ctx.stroke()
 
 // Mouth
 ctx.beginPath();
