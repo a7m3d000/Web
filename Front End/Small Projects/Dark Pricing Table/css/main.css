@@ -18,7 +18,8 @@ body {
 
 /* // Content Style */
 .container {
-    margin-top: 200px;    display: grid;
+    margin-top: 200px;    
+    display: grid;
     grid-template-columns: repeat(4, minmax(300px, 1fr));
 
 }
