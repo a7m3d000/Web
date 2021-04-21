@@ -1,0 +1,140 @@
+/* // Variables */
+:root {
+    --dark: #242424;
+    --blue: #03a9f4;
+    --light: #2a2a2a;
+}
+
+/* // Basic Style */
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* // Content Style */
+.container {
+    margin-top: 200px;    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+
+}
+
+.plan {
+    padding: 25px 0 50px 0;
+    color: #fff;
+    background-color: var(--dark);
+    border: 1px solid #313131;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.premium {
+    background-color: var(--blue);
+    padding: 25px 0 50px 0;
+    height: calc(100% + 40px);
+    transform: translateY(-47px);
+    border-color: #27b5f5 ;
+
+}
+
+.premium .price {
+    color: #f2fbff;
+
+}
+
+.premium .price span {
+    color: #fff;
+
+}
+.premium ul li:nth-child(2n){
+    background-color: var(--blue) !important;
+
+}
+
+.premium ul li {
+    border-color: #5fc9fa !important;
+    color: #b8ecfb !important;
+
+}
+
+.premium button {
+    border-color: #3dbdf6 !important;
+
+}
+
+.plan h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+
+}
+
+.plan .price {
+    margin-bottom: 20px;
+
+}
+
+.plan span {
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.plan ul li {
+    padding: 23px;
+    font-size: 17px;
+    border: 1px solid #313131;
+    border-left: none;
+    border-right: none;
+    padding-left: 125px;
+    padding-right: 125px;
+    color: #57504c;
+    
+}
+
+.plan ul li:nth-child(2n) {
+    background-color: var(--light);
+
+}
+
+.plan ul li:not(:first-child) {
+    border-top: none;
+
+}
+
+.plan button {
+    width: 170px;
+    height: 57px;
+    margin-top: 50px;
+    border: 1px solid #444444;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.plan button:hover{
+    cursor: pointer;
+}
+
