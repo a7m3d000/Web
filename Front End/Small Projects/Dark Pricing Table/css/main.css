@@ -40,7 +40,7 @@ body {
     background-color: var(--blue);
     padding: 25px 0 50px 0;
     height: calc(100% + 40px);
-    transform: translateY(-47px);
+    transform: translateY(-50px);
     border-color: #27b5f5 ;
 
 }
