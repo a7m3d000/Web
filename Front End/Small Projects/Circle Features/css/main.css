@@ -1,0 +1,215 @@
+/* ================== Main Style ================== */
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+/* ================== Container ================== */
+.container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 0;
+
+}
+
+.heading h1 {
+    color: #242d3c;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.heading p {
+    color: #a9aeb7;
+    font-size: 20px;
+    line-height: 15px;
+    
+}
+
+.sm-container {
+ position: relative;
+ 
+}
+
+.sm-container .main-circle {
+    height: 770px;
+    width: 770px;
+    border-radius: 100%;
+    position: relative;
+    background-image: url("../imgs/picture.jpg");  
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.sm-container .main-circle::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 45, 60, 0.78);
+    border-radius: 50%;
+
+}
+
+.sm-container .main-circle .inf {    
+    width: 500px;
+    transform: translate(9.5%, -30%);
+    z-index: 1;
+
+}
+
+.sm-container .main-circle .inf h3 {
+    color: rgb(255, 255, 255, 0.9);
+    font-size: 30px;
+
+}
+
+.sm-container .main-circle .inf p {
+    max-width: 430px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+    line-height: 1.5;
+
+}
+
+.sm-container .icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.sm-container .icon img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 30px;
+    background-color: #242d3c;
+    margin: 30px;
+    border: 18px solid #fff;
+
+}
+
+.sm-container .icon .info h3 {
+    font-weight: 800;
+    color: #242d3c;
+
+}
+
+.sm-container .icon .info p {
+    color: #a9aeb7;
+
+}
+
+
+/* One */
+.sm-container .one {
+    position: absolute;
+    top: -30px;
+    left: -400px;
+
+}
+
+.sm-container .one img{
+    background-color: #ff7058;
+    order: 2;
+
+} 
+
+.sm-container .one .info{
+    order: 1;
+    text-align: end;
+    font-size: 17px;
+    
+}
+
+
+/* Two */
+.sm-container .two {
+    position: absolute;
+    top: -30px;
+    right: -400px;
+
+}
+
+.sm-container .two img {
+    background-color: #80dcfe
+    ;
+}
+
+/* Three */
+.sm-container .three {
+    position: absolute;
+    bottom: -30px;
+    right: -400px;
+
+}
+
+.sm-container .three img {
+    background-color: #4cd4c0;
+
+}
+
+/* Four */
+.sm-container .four {
+    position: absolute;
+    bottom: -30px;
+    left: -400px;
+
+}
+
+.sm-container .one img{
+    order: 2;
+
+} 
+
+.sm-container .one .info{
+    order: 1;
+    text-align: end;
+    font-size: 17px;
+    
+}
+
+.sm-container .four img{
+    order: 2;
+    background-color: #ffd260;
+
+} 
+
+.sm-container .four .info{
+    order: 1;
+    text-align: end;
+    font-size: 17px;
+    
+}
+
+.sm-container .four .info h3 {
+    color: #242d3c;
+
+}
+.sm-container .one .info p {
+    color: #a9aeb7;
+    
+}
