@@ -1,0 +1,105 @@
+/* ================== Main Style ================== */
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Pangolin&display=swap');
+    font-family: cairo;
+
+}
+
+/* ================== Container ================== */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative; 
+    background-image: linear-gradient(90deg, #0CB152 0%, 
+                                             #0CB152 50%, 
+                                             #404442 50%, 
+                                             #404442 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ================== Small Container ================== */
+.small-container {
+    width: 90%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+/* ------------- Heading ------------- */
+.h1 {
+    height: 20%;
+    font-size: 30px;
+    margin-bottom: 150px;
+    margin-left: 2.3%;
+    border-bottom: 1px solid white;
+    color: white;
+   
+}
+
+/* .p{
+    
+    color: #0CB152;
+
+}
+
+.i {
+    color: #404442;
+
+} */
+
+/* ================== X-Container ================== */
+.xsmall-container {
+    width: 90%;
+    height: 40%;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* ------------- Peaces ------------- */
+.div {
+    width: calc(91% / 3);
+    height: 100%;
+    background-color: white;
+    position: relative;
+    border-radius: 50px 0px 0px 0px;
+
+}
+
+/* ------------- Images ------------- */
+img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 100%;
+    right: 0%;
+    margin-top: -40px;
+    margin-right: -40px;
+    border: 6px solid white;
+    border-radius: 0px 0px 25px 0px;
+    background-size: 50% 50%;
+    filter: grayscale(100%);
+    
+}
+
+/* ------------- Paragraphe ------------- */
+p {
+    margin: 7% 7% 7% 7%;
+    width: 86%;
+    height: 87%;
+
+}
