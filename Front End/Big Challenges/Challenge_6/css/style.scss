@@ -1,0 +1,125 @@
+// Varialbls
+$mainBackground: hsl(233, 47%, 7%);
+$text: hsl(244, 38%, 16%);
+$photo: hsl(277, 93%, 32%);
+$headerSpan: hsl(277, 64%, 61%);
+$heading: hsl(0, 0%, 100%);
+$para: hsla(0, 0%, 100%, 0.75);
+$numbers: hsla(0, 0%, 100%, 0.6);
+
+// Global
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: $mainBackground;
+}
+
+// Style
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 170px;
+    
+    .text {
+        background-color: $text;
+        border-radius: 10px 0 0 10px;
+        padding: 70px 40px;
+        max-width: 400px;
+
+        .info {
+            h3 {
+                font-size: 30px;
+                font-family: "Lexend Deca";
+                color: $heading;
+                margin: 0;
+
+                span {
+                    color: $headerSpan;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                color: $para;
+                font-family: "Lexend Deca";
+                padding-bottom: 50px;
+            }
+        }
+
+        .numbers {
+            display: flex;
+            justify-content: space-evenly;
+            color: $heading;
+
+            h4 {
+                font-size: 20px;
+                font-weight: bolder;
+                font-family: "Inter";
+            }
+
+            span {
+                font-size: 13.5px;
+                color: $para;
+                font-family: "Inter";
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .photo {
+        border-radius: 0 10px 10px 0;
+        position: relative;
+        width: 500px;
+        background-image: url("../images/image-header-desktop.jpg");
+        background-size: cover;
+        overflow: hidden;
+       
+        .overlay {
+            position: absolute;
+            background-color: $photo;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+        }
+    }
+
+    
+}
+
+// Media Queries
+@media (max-width: 375px) {
+    .container {
+        margin-top: 0;
+        flex-direction: column;
+        padding: 30px 15px;
+
+        .text {
+            order: 2;
+            border-radius: 0 0 10px 10px;
+
+           .info {
+
+               p {
+                   padding-bottom: 30px;
+                   padding-top: 10px;
+               }
+           }
+        }
+
+        .photo {
+            order: 1;
+            background-image: url("../images/image-header-desktop.jpg");
+            background-size: cover;
+            width: auto;
+            height: 430px;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+}
