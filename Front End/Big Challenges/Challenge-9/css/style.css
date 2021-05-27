@@ -1,0 +1,374 @@
+.sides, .container .left-side, .container .right-side {
+  position: fixed;
+  width: 650px;
+  height: 800px;
+  z-index: -1;
+}
+
+.gradient, .container .phone .header, .container .phone .three .thert-minute, .container .phone .three .one-hour {
+  background-image: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to right, #8838ff 0%, #e942ff 100%);
+}
+
+.main-time, .container .phone .three .thert-minute, .container .phone .three .one-hour {
+  border-radius: 15px 15px 15px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.mini-time, .container .phone .three .thert-minute .ther-min, .container .phone .three .one-hour .one-h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circles, .container .phone .three .thert-minute .ther-min .circle, .container .phone .three .one-hour .one-h .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #f5f3f7;
+}
+
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+  font-family: "Rubik";
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f3f7;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  position: relative;
+  padding: 15px;
+}
+.container .left-side {
+  left: -100px;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  background-image: linear-gradient(20deg, #8838ff 0%, #e942ff 100%);
+}
+.container .right-side {
+  right: -150px;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  background-color: #f2e6ff;
+}
+.container .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f5f3f7;
+  border: 10px solid #fff;
+  border-radius: 43px;
+  width: 320px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  margin-top: 100px;
+}
+.container .phone .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 20px 15px 20px;
+  color: #f5f3f7;
+  border-radius: 35px 35px 7px 7px;
+}
+.container .phone .header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .phone .header .info i {
+  font-size: 27px;
+  padding-right: 10px;
+}
+.container .phone .header .info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #f5f3f7;
+  margin-right: 6px;
+}
+.container .phone .header .info .text h3 {
+  font-size: 13px;
+}
+.container .phone .header .info .text p {
+  font-size: 10px;
+  margin-top: -10px;
+}
+.container .phone .header i {
+  padding-right: 10px;
+}
+.container .phone .one {
+  padding: 5px 5px 5px 10px;
+}
+.container .phone .one p {
+  background-color: #eedffc;
+  font-size: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px 15px 15px 3px;
+  color: #591098;
+  font-weight: normal;
+}
+.container .phone .two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px 10px 5px 5px;
+}
+.container .phone .two .dogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+.container .phone .two .dogs img {
+  width: 45px;
+  height: 45px;
+  border-radius: 30%;
+}
+.container .phone .two p {
+  background-color: #eedffc;
+  font-size: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px 15px 5px 15px;
+  color: #777;
+  background-color: #fff;
+  font-weight: normal;
+}
+.container .phone .three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px 5px 5px 10px;
+  color: #f5f3f7;
+}
+.container .phone .three p {
+  background-color: #eedffc;
+  font-size: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px 15px 15px 5px;
+  color: #591098;
+  font-weight: normal;
+}
+.container .phone .three .thert-minute {
+  margin-bottom: 10px;
+}
+.container .phone .three .thert-minute .ther-min p {
+  background-color: transparent;
+  color: #f5f3f7;
+}
+.container .phone .three .one-hour .one-h p {
+  background-color: transparent;
+  color: #f5f3f7;
+}
+.container .phone .message {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.container .phone .message i {
+  font-size: 23px;
+  height: 15px;
+  width: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 18px;
+  color: #f5f3f7;
+  background-color: #272626;
+  border-radius: 50%;
+  padding: 10px;
+}
+.container .phone .message input {
+  width: 100%;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 15px;
+}
+.container .phone .message input::-webkit-input-placeholder {
+  color: #777;
+  padding-left: 10px;
+  font-size: 12px;
+}
+.container .phone .message input:-ms-input-placeholder {
+  color: #777;
+  padding-left: 10px;
+  font-size: 12px;
+}
+.container .phone .message input::-ms-input-placeholder {
+  color: #777;
+  padding-left: 10px;
+  font-size: 12px;
+}
+.container .phone .message input::placeholder {
+  color: #777;
+  padding-left: 10px;
+  font-size: 12px;
+}
+.container .phone::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 30px;
+  background-color: #fff;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 25px;
+  top: -10px;
+}
+.container .para h2 {
+  color: #3e2753;
+  font-size: 50px;
+}
+.container .para p {
+  line-height: 1.6;
+  color: #777;
+}
+
+@media (max-width: 1024px) {
+  .container .left-side {
+    left: -50%;
+  }
+  .container .right-side {
+    right: -50%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .phone {
+    margin-top: 0;
+  }
+  .container .para {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .container .left-side {
+    width: 350px;
+    height: 750px;
+    left: -50%;
+  }
+  .container .right-side {
+    width: 350px;
+    height: 750px;
+    right: -70%;
+  }
+  .container .para h2 {
+    font-size: 35px;
+  }
+  .container .para p {
+    max-width: 350px;
+  }
+}
+@media (max-width: 320px) {
+  .container .phone {
+    width: 280px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
