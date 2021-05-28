@@ -1,51 +1,157 @@
-/* ================== Global ================== */
+
+/* ================== Main Style ================== */
 body {
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
 /* ================== Container ================== */
-.container {
-    height: 25%;
-    width: 65%;
-    position: relative;
-    margin: 300px auto;
-    padding: 100px;
-    background-color: aquamarine;
+.main-container {
+    margin-top: 270px;
+    width: 1000px;
+    height: 200px;
+    background-color: #f6f6f6;
+    padding: 85px;  
+ 
+}
+
+/* ================== Main Box ================== */
+.boxs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
-.boxs {
+.box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: antiquewhite;
-}
-
-.div {
-    width: calc(100%/3);
-    height: 100%;
-    padding: 50px;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 15px;
-}
-
-.box-1 {
-    margin-left: 0px;
-
-}
-.box-3 {
-    margin-right: 0px;
+    background-color: #ffffff;
+    width: calc(83% /3);
+    height: 100%;
+    padding: 20px;
+    position: relative;
 
 }
 
-.div h1, .div p {
-    text-align: center;
+/* ------- Cycles ------- */
+.cycle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    top: 0%;
+    margin-top: -30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;   
 
 }
+
+.one > .cycle {
+    background-color: #03a9f4;
+
+}
+
+.two > .cycle {
+    background-color: #009688;
+
+}
+
+.three > .cycle {
+    background-color: #ff5722;
+
+}
+
+/* ------- Text Box ------- */
+.box .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.box h1 {
+    color: #101010;
+
+}
+
+.box p {
+    color: #939393;
+    font-size: 17px;
+
+}
+
+/* ------- Borders ------- */
+.one {
+  border-bottom: 3.5px solid #03a9f4;
+  
+}
+
+.two {
+  border-bottom: 3.5px solid #009688;
+  
+}
+
+.three {
+  border-bottom: 3.5px solid #ff5722;
+  
+}
+
+/* ------- Buttons ------- */
+.box button {
+    height: 38px;
+    width: 150px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 1px 1px 5px  rgb(163, 161, 161);
+    transition-duration: 0.1s;
+
+}
+
+.box button:hover {
+    cursor: pointer;
+
+}
+
+.box button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+
+}
+
+.box .btn-one {
+    background-color: #03a9f4;
+
+}
+
+.box .btn-two {
+    background-color: #009688;
+
+}
+
+.box .btn-three {
+    background-color: #ff5722;
+
+}
+

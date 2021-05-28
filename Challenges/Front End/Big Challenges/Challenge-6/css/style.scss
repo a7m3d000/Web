@@ -1,125 +1,113 @@
-// Varialbls
-$mainBackground: hsl(233, 47%, 7%);
-$text: hsl(244, 38%, 16%);
-$photo: hsl(277, 93%, 32%);
-$headerSpan: hsl(277, 64%, 61%);
-$heading: hsl(0, 0%, 100%);
-$para: hsla(0, 0%, 100%, 0.75);
-$numbers: hsla(0, 0%, 100%, 0.6);
+// Variabls
+$sedansColor: hsl(31, 77%, 52%);
+$suvsColor: hsl(184, 100%, 22%);
+$luxuryColor: hsl(179, 100%, 13%);
+$headingColor: hsl(0, 0%, 95%);
+$paraColor: hsla(0, 0%, 100%, 0.75);
 
 // Global
-* {
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-}
-
 body {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: $mainBackground;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+    background-color: $headingColor;
 }
 
 // Style
 .container {
     display: flex;
-    justify-content: center;
-    padding: 15px;
-    margin-top: 170px;
-    
-    .text {
-        background-color: $text;
-        border-radius: 10px 0 0 10px;
-        padding: 70px 40px;
-        max-width: 400px;
+    position: relative;
+    padding: 70px 15px;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 100px;
 
-        .info {
-            h3 {
-                font-size: 30px;
-                font-family: "Lexend Deca";
-                color: $heading;
-                margin: 0;
+    .part {
+        padding: 40px 50px;
+        
+        h3 {
+            font-family: "Big Shoulders Display";
+            font-size: 40px;
+            color: $headingColor;
+            text-transform: uppercase;
+        }
 
-                span {
-                    color: $headerSpan;
-                }
-            }
+        p {
+            max-width: 200px;
+            font-size: 15px;
+            line-height: 2;
+            color: $paraColor;
+            font-family: "Lexend Deca";
+        }
 
-            p {
-                font-size: 15px;
-                color: $para;
-                font-family: "Lexend Deca";
-                padding-bottom: 50px;
+        button {
+            width: 135px;
+            margin-top: 50px;
+            height: 45px;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            background-color: $headingColor;
+            font-family: "Lexend Deca";
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid $headingColor;
+                cursor: pointer;
+                color: $headingColor;
             }
         }
 
-        .numbers {
-            display: flex;
-            justify-content: space-evenly;
-            color: $heading;
-
-            h4 {
-                font-size: 20px;
-                font-weight: bolder;
-                font-family: "Inter";
-            }
-
-            span {
-                font-size: 13.5px;
-                color: $para;
-                font-family: "Inter";
-                text-transform: uppercase;
-            }
+        .sedans-btn {
+            color: $sedansColor;
         }
+        
+        .suvs-btn {
+            color: $suvsColor;
+        }
+        
+        .luxury-btn {
+            color: $luxuryColor;
+        }  
     }
 
-    .photo {
-        border-radius: 0 10px 10px 0;
-        position: relative;
-        width: 500px;
-        background-image: url("../images/image-header-desktop.jpg");
-        background-size: cover;
-        overflow: hidden;
-       
-        .overlay {
-            position: absolute;
-            background-color: $photo;
-            width: 100%;
-            height: 100%;
-            opacity: 0.5;
-        }
+    .sedans {
+        background-color: $sedansColor;
+        border-radius: 7px 0px 0px 7px;
     }
-
     
+    .suvs {
+        background-color: $suvsColor;
+    }
+    
+    .luxury {
+        background-color: $luxuryColor;
+        border-radius: 0px 7px 7px 0px;
+    }
 }
 
-// Media Queries
+// Media Querries
 @media (max-width: 375px) {
+    
     .container {
         margin-top: 0;
-        flex-direction: column;
-        padding: 30px 15px;
 
-        .text {
-            order: 2;
-            border-radius: 0 0 10px 10px;
-
-           .info {
-
-               p {
-                   padding-bottom: 30px;
-                   padding-top: 10px;
-               }
-           }
+        .part {
+            flex-basis: 100%;
         }
 
-        .photo {
-            order: 1;
-            background-image: url("../images/image-header-desktop.jpg");
-            background-size: cover;
-            width: auto;
-            height: 430px;
-            border-radius: 10px 10px 0 0;
+        .sedans {
+            border-radius: 7px 7px 0px 0px;
         }
-    }
+    
+        .luxury {
+            border-radius: 0px 0px 7px 7px;
+        }
+    }  
 }

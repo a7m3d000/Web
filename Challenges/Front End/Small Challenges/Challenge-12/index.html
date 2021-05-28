@@ -1,55 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Semple Form</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-      <!-- ================== Main Container================== -->
-      <div class="main-container">
+  <body>
+    
+      <!-- Container Slider -->
+    <div class="slider">
+      
+      <!-- previous Button -->
+      <img class="prev" src="imgs/prev.png"></div>
 
-        <!-- ================== Form ================== -->
-        <div class="box">
-          <form action="">
-            <div class="first-three">
-              <div class="username">
-                <label for="username">Username <span>*</span></label> <br>
-                <input type="text" placeholder="Type Your Name English Only" required>
-              </div>
-
-              <div class="pass">
-                <label for="password">Password <span>*</span> </label> <br>
-                <input type="password" placeholder="Type Complex Password" required>
-              </div>
-
-              <div class="e-mail">
-                <label for="email">Email <span>*</span> </label> <br>
-                <input type="email" placeholder="Type a Valid Email" required>
-              </div>
-            </div>
-
-            <div class="second-two">
-              <div class="phone">
-                <label for="tel">Phone</label> <br>
-                <input type="tel">
-              </div>
-
-              <div class="brief">
-                <label for="brief">Brief</label> <br>
-                <textarea name="Brief" id="brief" cols="30" rows="10"></textarea>
-              </div>
-            </div>
-
-            <input class="btn" type="submit" name="submit" id="">
-          </form>
-
+      <!-- Slides -->
+      <div class="slide">
         
-        </div>
-
+      <!-- Slides's Images -->
+        <img src="imgs/img1.jpg" alt="JOKER" class="show">
+        <img src="imgs/img2.jpg" alt="JOKER">
+        <img src="imgs/img3.jpg" alt="JOKER">
+        <img src="imgs/img4.jpg" alt="JOKER">
+        <img src="imgs/img5.jpg" alt="JOKER">
       </div>
-    </body>
+    
+      <!-- Next Button -->
+      <img class="next" src="imgs/next.png"></div>
+
+    </div>
+
+    
+  <script src="JQuery/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+
+
 </html>

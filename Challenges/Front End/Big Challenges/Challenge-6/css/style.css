@@ -1,111 +1,100 @@
-* {
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
-}
-
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #090b1a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+  background-color: #f2f2f2;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 15px;
-  margin-top: 170px;
+  position: relative;
+  padding: 70px 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-top: 100px;
 }
-.container .text {
-  background-color: #1b1938;
-  border-radius: 10px 0 0 10px;
-  padding: 70px 40px;
-  max-width: 400px;
+.container .part {
+  padding: 40px 50px;
 }
-.container .text .info h3 {
-  font-size: 30px;
-  font-family: "Lexend Deca";
-  color: white;
-  margin: 0;
-}
-.container .text .info h3 span {
-  color: #aa5cdb;
-}
-.container .text .info p {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Lexend Deca";
-  padding-bottom: 50px;
-}
-.container .text .numbers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  color: white;
-}
-.container .text .numbers h4 {
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: "Inter";
-}
-.container .text .numbers span {
-  font-size: 13.5px;
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Inter";
+.container .part h3 {
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  color: #f2f2f2;
   text-transform: uppercase;
 }
-.container .photo {
-  border-radius: 0 10px 10px 0;
-  position: relative;
-  width: 500px;
-  background-image: url("../images/image-header-desktop.jpg");
-  background-size: cover;
-  overflow: hidden;
+.container .part p {
+  max-width: 200px;
+  font-size: 15px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca";
 }
-.container .photo .overlay {
-  position: absolute;
-  background-color: #63069d;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
+.container .part button {
+  width: 135px;
+  margin-top: 50px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca";
+}
+.container .part button:hover {
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+.container .part .sedans-btn {
+  color: #e38826;
+}
+.container .part .suvs-btn {
+  color: #006970;
+}
+.container .part .luxury-btn {
+  color: #004241;
+}
+.container .sedans {
+  background-color: #e38826;
+  border-radius: 7px 0px 0px 7px;
+}
+.container .suvs {
+  background-color: #006970;
+}
+.container .luxury {
+  background-color: #004241;
+  border-radius: 0px 7px 7px 0px;
 }
 
 @media (max-width: 375px) {
   .container {
     margin-top: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 30px 15px;
   }
-  .container .text {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    border-radius: 0 0 10px 10px;
+  .container .part {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
-  .container .text .info p {
-    padding-bottom: 30px;
-    padding-top: 10px;
+  .container .sedans {
+    border-radius: 7px 7px 0px 0px;
   }
-  .container .photo {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    background-image: url("../images/image-header-desktop.jpg");
-    background-size: cover;
-    width: auto;
-    height: 430px;
-    border-radius: 10px 10px 0 0;
+  .container .luxury {
+    border-radius: 0px 0px 7px 7px;
   }
 }
 

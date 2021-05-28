@@ -1,12 +1,206 @@
-/* ----- Main ----- */
+/* ------------ Variables ------------ */
+:root {
+    --background: #e7f3fb;
+    --basic: #13c8a6;
+    --standard: #efcb53;
+    --premium: #555fae;
+    
+}
+
+
+/* ================== Main Style ================== */
 body {
-    font-family: tahoma;
     box-sizing: border-box;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+/* ================== Container ================== */
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin-top: 250px;
+   gap: 30px;
+ 
+}
+
+
+/* ================== Plans ================== */
+.plan {
+    background-color: #fff;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.15);
 
 }
 
-#my-canvas {
-    border: 3px solid #ccc;
-    margin: 200px 350px;
+.plan h1 {
+    font-weight: lighter;
+    font-size: 43px;
+    color: #636373;
+    position: relative;
+
+}
+
+.plan span {
+    padding: 15px 50px;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    left: -10px;
+    color: #fff;
+    font-size: 20px;
+    top: 140px;
+    letter-spacing: 1.5px;
+
+}
+
+.plan ul {
+    list-style: none;
+    padding-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #7c7778;
+    font-size: 18px;
+    padding-left: 0;
+
+}
+
+.plan ul li:not(:first-child) {
+    padding-top: 20px;
+
+}
+
+.plan button {
+    width: 157px;
+    border: none;
+    outline: none;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 14.5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 14.5px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.plan button:hover {
+    cursor: pointer;
+
+}
+
+
+/* ---------- Plane One ---------- */
+.one {
+    /* transform: translateY(-45px); */
+    margin-bottom: 35px;
+    margin-top: -35px;
+
+}
+
+.plan .basic {
+    background-color: var(--basic);
+
+}
+
+.plan .basic::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0;
+    left: -15px;
+    top: -15px;
+    border-top: 15px solid transparent ;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #13a187;
+    z-index: -1;
+    
+}
+
+.plan .basic-btn {
+    background-color: var(--basic);
+
+}
+
+
+/* ---------- Plan Two ---------- */
+.plan .standard {
+    background-color: var(--standard);
+
+}
+
+.plan .standard::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0;
+    left: -15px;
+    top: -15px;
+    border-top: 15px solid transparent ;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #bb9f44;
+    z-index: -1;
+    
+}
+
+.plan .standard-btn {
+    background-color: var(--standard);
+
+}
+
+
+/* ---------- Plan Three ---------- */
+.three {
+    /* transform: translateY(45px); */
+    margin-bottom: -35px;
+    margin-top: 35px;
+
+}
+
+.plan .premium {
+    background-color: var(--premium);
+
+}
+
+.plan .premium::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0;
+    left: -15px;
+    top: -15px;
+    border-top: 15px solid transparent ;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #464e8b;
+    z-index: -1;
+    
+}
+
+.plan .premium-btn {
+    background-color: var(--premium);
+
 }

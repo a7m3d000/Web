@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Semple Planes</title>
+        <title>Semple Form</title>
 
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -12,42 +12,42 @@
       <!-- ================== Main Container================== -->
       <div class="main-container">
 
-        <!-- ================== Box ================== -->
+        <!-- ================== Form ================== -->
         <div class="box">
+          <form action="">
+            <div class="first-three">
+              <div class="username">
+                <label for="username">Username <span>*</span></label> <br>
+                <input type="text" placeholder="Type Your Name English Only" required>
+              </div>
 
-          <div class="product-one">
-            <h1>Product <span>One</span> </h1>
+              <div class="pass">
+                <label for="password">Password <span>*</span> </label> <br>
+                <input type="password" placeholder="Type Complex Password" required>
+              </div>
 
-            <div class="content">
-              <h3>Unlimited Downloads</h3>
-
-              <ul>
-                <li>Feature Number One</li>
-                <li>Feature Number Two</li>
-                <li>Feature Number Three</li>
-              </ul>
-
-              <button>Go To Product</button>
+              <div class="e-mail">
+                <label for="email">Email <span>*</span> </label> <br>
+                <input type="email" placeholder="Type a Valid Email" required>
+              </div>
             </div>
-          </div>
 
-          <div class="devider">or</div>
+            <div class="second-two">
+              <div class="phone">
+                <label for="tel">Phone</label> <br>
+                <input type="tel">
+              </div>
 
-          <div class="product-two">
-            <h1>Product <span>Two</span> </h1>
-
-            <div class="content">
-              <h3>Unlimited Downloads</h3>
-
-              <ul>
-                <li>Feature Number One</li>
-                <li>Feature Number Two</li>
-                <li>Feature Number Three</li>
-              </ul>
-
-              <button>Go To Product</button>
+              <div class="brief">
+                <label for="brief">Brief</label> <br>
+                <textarea name="Brief" id="brief" cols="30" rows="10"></textarea>
+              </div>
             </div>
-          </div> 
+
+            <input class="btn" type="submit" name="submit" id="">
+          </form>
+
+        
         </div>
 
       </div>
