@@ -1,0 +1,373 @@
+// Variables
+$colorOne: hsl(264, 100%, 61%);
+$colorTwo: hsl(293, 100%, 63%);
+$white: hsl(270, 20%, 96%);
+$appBack: hsl(270, 20%, 96%);
+$submitBtn: hsl(271, 36%, 24%);
+$radioBtn: hsl(289, 100%, 72%);
+$messageBack: hsl(272, 82%, 93%);
+$messageColor: hsl(272, 81%, 33%);
+$fontSize: 16px;
+
+
+// Extends
+.sides {
+    position: fixed;
+    width: 650px;
+    height: 800px;
+    z-index: -1;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, $colorOne 0%,
+                                                        $colorTwo 100%);
+}
+
+.main-time {
+    border-radius: 15px 15px 15px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+
+.mini-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid $white;
+}
+
+
+// Global
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+    font-family: "Rubik";
+}
+
+body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: $appBack;
+}
+
+
+// Style
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    position: relative;
+    padding: 15px;
+
+    .left-side {
+        @extend .sides;
+        left: -100px;
+        top: 0;
+        border-radius: 0 0 50% 50%;
+        background-image: linear-gradient(20deg, $colorOne 0%,
+                                                        $colorTwo 100%);
+    }
+
+    .right-side {
+        @extend .sides;
+        right: -150px;
+        bottom: 0;
+        border-radius: 50% 50% 0 0;
+        background-color: hsl(269, 100%, 95%);
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: column;
+        background-color: $appBack;
+        border: 10px solid #fff;
+        border-radius: 43px;
+        width: 320px;
+        height: fit-content;
+        position: relative;
+        margin-top: 100px;
+
+        .header {
+            @extend .gradient;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px 20px 15px 20px;
+            color: $white;
+            border-radius: 35px 35px 7px 7px ;
+
+            .info {
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 27px;
+                    padding-right: 10px;
+                }
+    
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 3px solid $white;
+                    margin-right: 6px;
+                }
+
+                .text {
+                    h3 {
+                        font-size: 13px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                        margin-top: -10px;
+                    }
+                }
+            }
+
+            i {
+                padding-right: 10px;
+            }
+        }
+
+        .one {
+            padding: 5px 5px 5px 10px;
+            p {
+                background-color: $messageBack;
+                font-size: 10px;
+                width: fit-content;
+                padding: 10px;
+                border-radius: 15px 15px 15px 3px;
+                color: $messageColor;
+                font-weight: normal;
+            }
+        }
+
+        .two {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 5px 10px 5px 5px;
+
+            .dogs {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 60%;
+
+                img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 30%;
+                }
+            }
+
+            p {
+                background-color: $messageBack;
+                font-size: 10px;
+                width: fit-content;
+                padding: 10px;
+                border-radius: 15px 15px 5px 15px;
+                color: #777;
+                background-color: #fff;
+                font-weight: normal;
+            }
+        }
+
+        .three {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 5px 5px 5px 10px;
+            color: $white;
+
+            p {
+                background-color: $messageBack;
+                font-size: 10px;
+                width: fit-content;
+                padding: 10px;
+                border-radius: 15px 15px 15px 5px;
+                color: $messageColor;
+                font-weight: normal;   
+            }
+
+            .thert-minute {
+                @extend .main-time;
+                @extend .gradient;
+                margin-bottom: 10px;
+                
+                .ther-min {
+                    @extend .mini-time;
+
+                    .circle {
+                        @extend .circles;
+                    }
+
+                    p {
+                        background-color: transparent;
+                        color: $white;
+                    }
+                }
+            }
+
+            .one-hour {
+                @extend .main-time;
+                @extend .gradient;
+                .one-h {
+                    @extend .mini-time;
+
+                    .circle {
+                        @extend .circles;
+                    }
+
+                    p {
+                        background-color: transparent;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .message {
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+
+            i {
+                font-size: 23px;
+                height: 15px;
+                width: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 18px;
+                color: $white;
+                background-color: rgb(39, 38, 38);
+                border-radius: 50%;
+                padding: 10px;
+            }
+
+            input {
+                width: 100%;
+                height: 25px;
+                border: none;
+                outline: none;
+                border-radius: 30px;
+                padding: 10px;
+                padding-left: 15px;
+            }
+
+            input::placeholder {
+                color: #777;
+                padding-left: 10px;
+                font-size: 12px;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 190px;
+            height: 30px;
+            background-color: #fff;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 25px;
+            top: -10px;
+        }
+    }
+
+    .para {
+        h2 {
+            color: $submitBtn;
+            font-size: 50px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #777;
+        }
+    }
+}
+
+
+// Media Queries
+@media (max-width: 1024px) {
+    .container {
+        .left-side {
+            left: -50%;
+        }
+
+        .right-side {
+            right: -50%;
+        }
+    } 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+
+        .phone {
+            margin-top: 0;
+        }
+
+        .para {
+            text-align: center;
+        }
+    } 
+}
+
+@media (max-width: 425px) {
+    .container {
+        .left-side {
+            width: 350px;
+            height: 750px;
+            left: -50%;
+        }
+
+        .right-side {
+            width: 350px;
+            height: 750px;
+            right: -70%;
+        }
+
+        .para { 
+            h2 {
+                font-size: 35px;
+            }     
+            
+            p {
+                max-width: 350px;
+            }
+        }
+    } 
+}
+
+@media (max-width: 320px) {
+    .container {
+        .phone {
+            width: 280px;
+        }
+    } 
+}
+
+
+
+

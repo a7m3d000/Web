@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 70px 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-top: 100px;
+}
+.container .part {
+  padding: 40px 50px;
+}
+.container .part h3 {
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+.container .part p {
+  max-width: 200px;
+  font-size: 15px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca";
+}
+.container .part button {
+  width: 135px;
+  margin-top: 50px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca";
+}
+.container .part button:hover {
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+.container .part .sedans-btn {
+  color: #e38826;
+}
+.container .part .suvs-btn {
+  color: #006970;
+}
+.container .part .luxury-btn {
+  color: #004241;
+}
+.container .sedans {
+  background-color: #e38826;
+  border-radius: 7px 0px 0px 7px;
+}
+.container .suvs {
+  background-color: #006970;
+}
+.container .luxury {
+  background-color: #004241;
+  border-radius: 0px 7px 7px 0px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin-top: 0;
+  }
+  .container .part {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .container .sedans {
+    border-radius: 7px 7px 0px 0px;
+  }
+  .container .luxury {
+    border-radius: 0px 0px 7px 7px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
