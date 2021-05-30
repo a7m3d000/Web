@@ -1,0 +1,130 @@
+// Variables
+$padding: 40px;
+
+// Global
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+    font-family: "Karla";
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(204, 43%, 93%);
+}
+
+// Style
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    max-width: 800px;
+    padding: 15px;
+    margin: 100px auto;
+
+    .part-1 {
+        grid-column: 1 / span 2;
+        background-color: #fff;
+        padding: $padding;
+        border-radius: 10px 10px 0 0 ;
+
+        h3 {
+            font-size: 23px;
+            color: #59b6b7;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: #c7dc57;
+        }
+
+        p {
+            color: #b6b8bb;
+            line-height: 1.6;
+        }
+    }
+
+    .part-2 {
+        background-color: #2bb3b1;
+        padding: $padding;
+        border-radius: 0 0 0 10px;
+
+        h3 {
+            color: #fff;
+        }
+
+        .price {
+            span:first-child {
+                font-size: 30px;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            span:last-child {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        p {
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        button {
+            width: 100%;
+            padding: 19px;
+            border-radius: 5px;
+            background-color: #c7dc57;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            color: #fff;
+            margin-top: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+            &:active {
+                transform: translateY(2px);
+                box-shadow: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .part-3 {
+        padding: $padding;
+        background-color: #4abebd;
+        border-radius: 0 0 10px 0;
+
+        h3 {
+            color: #fff;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+    }
+}
+
+// Media Queries
+@media (max-width: 425px) {
+
+    .container {
+        margin: 0 auto;
+
+        .part-1 {
+            grid-column: auto;
+        }
+
+        .part-2 {
+            border-radius: 0;
+        }
+        .part-3 {
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}
