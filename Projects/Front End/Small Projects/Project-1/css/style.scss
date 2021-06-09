@@ -1,0 +1,87 @@
+// Variables
+$backs: facebook twitter insta github google;
+$icons: (
+          "facebook": #1094f4, 
+          "twitter" : #2aa9e0, 
+          "insta"   : #e74560, 
+          "github"  : #1a1a31, 
+          "google"  : #f85b00
+        );
+
+// Mixins
+@mixin iconsColor {
+  @each $icon, $color in $icons {
+    .#{$icon} {
+      a {
+        color: #{$color};
+      }
+    }
+  } 
+}
+
+@mixin iconsBacks {
+  @each $back in $backs {
+    .#{$back} {
+      background-image: url("../images/#{$back}.png");
+    }
+  }
+}
+
+// Global
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// Style
+.container {
+  width: 500px;
+  margin: 350px auto;
+
+  .icons {
+    @include iconsColor();
+    @include iconsBacks();
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: 0 80px;
+      background-repeat: no-repeat;
+      background-size: 250% 140px;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 50%;
+      font-size: 50px;
+      width: 60px;
+      height: 60px;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
+      &:hover {
+        transition: 01.3s; 
+        background-position: -70px -30px;
+        cursor: pointer;
+
+        a {
+          transition: 0.2s;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+//Media Queries
+@media (max-width: 450px) {
+  .container {
+    margin: 150px auto;
+
+    .icons {
+      flex-direction: column;
+    }
+  }
+}
