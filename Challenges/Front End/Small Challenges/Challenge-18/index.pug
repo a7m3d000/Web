@@ -1,0 +1,70 @@
+doctype 
+html 
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport", 
+            content="width=device-width, initial-scale=1.0"
+            )
+
+        title C-18
+
+        //- Links
+        link(rel="preconnect", 
+            href="https://fonts.gstatic.com"
+            )
+        link(href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap", 
+            rel="stylesheet"
+            )
+        link(rel="stylesheet", 
+            href="css/all.min.css"
+            )
+        link(rel="stylesheet", 
+            href="css/style.css"
+            )
+    body 
+        .form 
+            h3 sign up 
+            form(action="POST") 
+                div(class="input name") 
+                    input(type="text", 
+                        name="name", 
+                        placeholder="Name *",
+                        required 
+                        )
+                div(class="input email") 
+                    input(type="email", 
+                        class="email", 
+                        name="email", 
+                        placeholder="E-mail *",
+                        required 
+                        )
+                div(class="input password") 
+                    input(type="password",
+                        class="password",
+                        name="password",
+                        placeholder="Password *",
+                        required
+                        )
+                div(class="input re-password") 
+                    input(type="password",
+                        class="re-password",
+                        name="confirm password",
+                        placeholder="Confirm Password *",
+                        required
+                        )
+                input(type="submit",
+                    class="login",
+                    name="confirm password",
+                    value="login"
+                    )
+            .msg 
+                span have account? 
+                a(href="#") Login Here
+            .separetor 
+                | ----------------------------------------- 
+            .register 
+                h3 Or Register With 
+                .social 
+                    i(class="fab fa-facebook-f facebook")
+                    i(class="fab fa-twitter twitter")
+                    i(class="fab fa-google-plus-g google")
