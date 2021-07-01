@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap");
+  font-family: "Londrina Outline", "Codystar", "cursive"; }
+
+body {
+  background-image: url("../imgs/wall.jpg");
+  background-size: cover; }
+
+.container {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 100vh;
+  width: 100vw; }
+  .container .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7) 0% 10%, rgba(0, 0, 0, 0.95) 100%);
+    z-index: -1; }
+  .container .text {
+    color: #f5b7b1;
+    font-size: 17rem;
+    font-weight: lighter;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 1.5rem;
+    max-width: 100%;
+    height: 100%;
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #e00000, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000; }
+    .container .text div:nth-child(1) {
+      font-size: 1.4em;
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+      -webkit-animation-name: lighter, dark, assss,  dark, assss, dark,  assss, dark, assss;
+              animation-name: lighter, dark, assss,  dark, assss, dark,  assss, dark, assss;
+      -webkit-animation-duration: 1s, 0.3s, 2.5s,  0.3s, 2.5s, 0.3s,  2.5s, 0.3s, 2.5;
+              animation-duration: 1s, 0.3s, 2.5s,  0.3s, 2.5s, 0.3s,  2.5s, 0.3s, 2.5;
+      -webkit-animation-iteration-count: 7, 5, 1,  5, 1, 5,  1, 5, 1;
+              animation-iteration-count: 7, 5, 1,  5, 1, 5,  1, 5, 1;
+      -webkit-animation-delay: 1s, 2s, 6.8s,  7s, 10.8s, 11s,  15.8s, 16s, 18.3s;
+              animation-delay: 1s, 2s, 6.8s,  7s, 10.8s, 11s,  15.8s, 16s, 18.3s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .container .text div:nth-child(2) {
+      font-size: 1.77em;
+      -webkit-animation-name: lighter, dark, assss;
+              animation-name: lighter, dark, assss;
+      -webkit-animation-duration: 1s, 0.3s, 2.5s;
+              animation-duration: 1s, 0.3s, 2.5s;
+      -webkit-animation-iteration-count: 7, 5, 1;
+              animation-iteration-count: 7, 5, 1;
+      -webkit-animation-delay: 0s, 0.2s, 5s;
+              animation-delay: 0s, 0.2s, 5s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .container .text div:nth-child(3) {
+      font-size: 1.4em;
+      -webkit-transform: rotate(-10deg);
+              transform: rotate(-10deg);
+      -webkit-animation-name: lighter, dark, assss,  dark, assss;
+              animation-name: lighter, dark, assss,  dark, assss;
+      -webkit-animation-duration: 1s, 0.3s, 2.5s,  0.3s, 2.5s;
+              animation-duration: 1s, 0.3s, 2.5s,  0.3s, 2.5s;
+      -webkit-animation-iteration-count: 7, 5, 1,  5, 1;
+              animation-iteration-count: 7, 5, 1,  5, 1;
+      -webkit-animation-delay: 1s, 1.2s, 6s,  6.2s, 11s;
+              animation-delay: 1s, 1.2s, 6s,  6.2s, 11s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+
+@-webkit-keyframes lighter {
+  0% {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #ffee05, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000;
+    color: #f5b7b1; }
+  2% {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1;
+    color: #f5b7b1; }
+  5% {
+    color: #4e4b4b;
+    text-shadow: none; }
+  80% {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #e00000, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000;
+    color: #f5b7b1; }
+  95% {
+    color: #f5b7b1;
+    text-shadow: none; }
+  100% {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #e00000, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000;
+    color: #f5b7b1; } }
+
+@keyframes lighter {
+  0% {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #ffee05, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000;
+    color: #f5b7b1; }
+  2% {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1;
+    color: #f5b7b1; }
+  5% {
+    color: #4e4b4b;
+    text-shadow: none; }
+  80% {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #e00000, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000;
+    color: #f5b7b1; }
+  95% {
+    color: #f5b7b1;
+    text-shadow: none; }
+  100% {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #e00000, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000;
+    color: #f5b7b1; } }
+@-webkit-keyframes dark {
+  to {
+    text-shadow: none;
+    color: #4e4b4b; } }
+@keyframes dark {
+  to {
+    text-shadow: none;
+    color: #4e4b4b; } }
+@-webkit-keyframes assss {
+  to {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #e00000, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000;
+    color: #f5b7b1; } }
+@keyframes assss {
+  to {
+    text-shadow: 0 0 5px #f5b7b1, 0 0 10px #f5b7b1, 0 0 15px #f5b7b1, 0 0 50px #e00000, 0 0 100px #e00000, 0 0 150px #e00000, 0 0 200px #e00000, 0 0 250px #e00000, 0 0 300px #e00000, 0 0 700px #e00000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000, -10px 25px 20px #000;
+    color: #f5b7b1; } }
+@media (max-width: 1024px) {
+  .text div:nth-child(2) {
+    font-size: 1.27em !important; }
+  .text div:nth-child(1),
+  .text div:nth-child(3) {
+    font-size: 1em !important; } }
+@media (max-width: 425px) {
+  .text {
+    letter-spacing: 0.7rem !important; }
+    .text div:nth-child(2) {
+      font-size: 0.87em !important; }
+    .text div:nth-child(1),
+    .text div:nth-child(3) {
+      font-size: 0.6em !important; } }
+@media (max-width: 375px) {
+  .text {
+    letter-spacing: 0.7rem !important; }
+    .text div:nth-child(2) {
+      font-size: 0.76em !important; }
+    .text div:nth-child(1),
+    .text div:nth-child(3) {
+      font-size: 0.5em !important; } }
+
+/*# sourceMappingURL=style.css.map */
